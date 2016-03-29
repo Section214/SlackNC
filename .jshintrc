@@ -1,0 +1,11 @@
+{
+    "boss": true,
+    "curly": true,
+    "eqeqeq": true,
+    "noarg": true,
+    "undef": true,
+    "unused": true,
+    "esnext": true,
+    "node": true,
+    "loopfunc": true
+}
