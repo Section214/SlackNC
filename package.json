@@ -1,0 +1,42 @@
+{
+  "name": "slacknc",
+  "version": "0.0.1",
+  "description": "A powerful, user-friendly command-line client for Slack",
+  "homepage": "https://section214.com/product/slacknc",
+  "bugs": "https://github.com/Section214/SlackNC/issues",
+  "license": "GPL-2.0",
+  "main": "src/slacknc.js",
+  "repository": "Section214/SlackNC",
+  "keywords": [
+    "slack",
+    "node",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Daniel J Griffiths",
+    "email": "dgriffiths@section214.com",
+    "url": "https://section214.com"
+  },
+  "engines": {
+    "node": ">=4",
+    "npm": ">=3"
+  },
+  "dependencies": {
+    "slack-client": "^2.0.4",
+    "semver": "^5.1.0",
+    "nconf": "^0.8.4",
+    "winston": "^2.1.1",
+    "string": "^3.3.1",
+    "moment": "^2.11.2",
+    "blessed": "^0.1.81"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.0",
+    "jshint": "^2.9.1"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/slacknc.js",
+    "lint": "npm run lint-js",
+    "lint-js": "jshint ./src"
+  }
+}
