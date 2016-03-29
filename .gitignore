@@ -42,4 +42,4 @@ tests/clover.xml
 *~
 
 # Personal configs
-config/config.json
+config/servers.json
