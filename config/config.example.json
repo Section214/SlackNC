@@ -1,6 +1,7 @@
 {
-  "server_name": {
+  "team_name": {
     "display_name": "My Server",
+    "username": "Your username for this team",
     "token": "Slack API token (https://api.slack.com/web)"
   }
 }
