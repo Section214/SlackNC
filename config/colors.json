@@ -1,0 +1,10 @@
+{
+  "titleBar": {
+    "fg": "#ffffff",
+    "bg": "#0000ff"
+  },
+  "teamBar": {
+    "fg": "#ffffff",
+    "bg": "#0000ff"
+  }
+}

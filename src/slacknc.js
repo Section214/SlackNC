@@ -28,6 +28,7 @@
 // Setup globals... the fewer the better!
 GLOBAL.sncversion = '0.0.1';
 GLOBAL.sncpath    = __dirname;
+GLOBAL.sncconfigs = {};
 
 // Load all the things!
 let semver     = require('semver');
@@ -38,3 +39,5 @@ if (! semver.satisfies(process.versions.node, '>=4')) {
     logger.log('error', 'SlackNC requires Node 4.0 or later. Please update Node to continue.');
     return;
 }
+
+require('./lib/core/ui.js');
