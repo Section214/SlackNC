@@ -1,0 +1,6 @@
+{
+  "server_name": {
+    "display_name": "My Server",
+    "token": "Slack API token (https://api.slack.com/web)"
+  }
+}
