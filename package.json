@@ -22,7 +22,7 @@
     "npm": ">=3"
   },
   "dependencies": {
-    "slack-client": "^2.0.4",
+    "@slack/client": "^2.0.4",
     "semver": "^5.1.0",
     "nconf": "^0.8.4",
     "winston": "^2.1.1",
