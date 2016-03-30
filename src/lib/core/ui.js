@@ -33,6 +33,7 @@ class ui {
 
         let screen = blessed.screen({
             smartCSR: true,
+            dockBorders: true,
             title: 'Slack'
         });
         let container = blessed.box({
@@ -65,9 +66,60 @@ class ui {
                 fg: config.get('colors', 'teamBar:fg', '#0000ff')
             }
         });
+        let channelBar = blessed.box({
+            width: '0%+25',
+            height: '100%',
+            left: '0',
+            border: {
+                type: 'line'
+            },
+            style: {
+                bg: config.get('colors', 'channelBar:bg', '#000000'),
+                fg: config.get('colors', 'channelBar:fg', '#ffffff'),
+                border: {
+                    fg: config.get('colors', 'frameBorders', '#ffffff')
+                }
+            }
+        });
+        let chatWindow = blessed.box({
+            width: '100%-25',
+            height: '100%',
+            top: '0',
+            right: '0',
+            border: {
+                type: 'line'
+            },
+            style: {
+                bg: config.get('colors', 'chatWindow:bg', '#000000'),
+                fg: config.get('colors', 'chatWindow:fg', '#ffffff'),
+                border: {
+                    fg: config.get('colors', 'frameBorders', '#ffffff')
+                }
+            }
+        });
+        let chatBox = blessed.box({
+            width: '100%-25',
+            height: '0%+3',
+            top: '100%-3',
+            right: '0',
+            border: {
+                type: 'line'
+            },
+            style: {
+                bg: config.get('colors', 'chatBox:bg', '#000000'),
+                fg: config.get('colors', 'chatBox:fg', '#ffffff'),
+                border: {
+                    fg: config.get('colors', 'frameBorders', '#ffffff')
+                }
+            }
+        });
 
         titleBar.setContent('{center}SlackNC v' + GLOBAL.sncversion + '{/center}');
         teamBar.setContent('*[0] Console');
+
+        mainWindow.append(channelBar);
+        mainWindow.append(chatWindow);
+        mainWindow.append(chatBox);
         container.append(titleBar);
         container.append(mainWindow);
         container.append(teamBar);
