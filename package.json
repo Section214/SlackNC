@@ -22,12 +22,13 @@
     "npm": ">=3"
   },
   "dependencies": {
-    "@slack/client": "^2.0.4",
+    "@slack/client": "^3.6.0",
     "semver": "^5.1.0",
     "nconf": "^0.8.4",
     "winston": "^2.1.1",
     "string": "^3.3.1",
     "moment": "^2.11.2",
+    "chalk": "^1.1.1",
     "blessed": "^0.1.81"
   },
   "devDependencies": {
